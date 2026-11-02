@@ -1,0 +1,37 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+#excluidas
+node_modules
+# RIESGOS DE NO EXCLUIRLA:
+# - Peso masivo: Contiene miles de dependencias locales. Subirla ralentiza drásticamente el git push/pull.
+# - Conflictos de entorno: Las dependencias se deben compilar/instalar en limpio en cada máquina con 'npm install'.
+# - Ensucia el historial: Cada actualización de un paquete generaría miles de cambios innecesarios en Git.
+node_modules/
+
+dist
+# RIESGOS DE NO EXCLUIRLA:
+# - Código redundante: Contiene los archivos autogenerados para producción tras compilar.
+# - Conflictos de fusión (Merge Conflicts): Cambia por completo cada vez que compilas, haciendo imposible fusionar ramas.
+# - Mala práctica: En el repositorio solo debe estar el código fuente modificable, no el resultado final.
+
+#no excluidas
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
