@@ -32,11 +32,7 @@ origin: { y: 0.6 }
       <section id="center">
         <div className="hero">
 
-          <button onClick={lanzarConfetti}> 
-
-Lanzar Confetti 
-
-</button> 
+         
 
  
           <img src={heroImg} className="base" width="170" height="179" alt="" />
@@ -61,6 +57,14 @@ Lanzar Confetti
       <div className="ticks"></div>
 
       <section id="next-steps">
+
+         <button onClick={lanzarConfetti}> 
+
+    Lanzar Confetti 
+
+      </button> 
+
+
         <div id="docs">
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
