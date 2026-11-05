@@ -4,7 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 
-import Confetti from 'react-confetti'
+
 
 import Confetti from 'canvas-confetti'
 
@@ -27,7 +27,7 @@ function App() {
       <section id="center">
         <div className="hero">
 
-          <Confetti/>
+          
 
             <button onClick={lanzarConfetti}>
         Lanzar Confetti
@@ -54,7 +54,7 @@ function App() {
 
       <div className="ticks"></div>
 
-      <Confetti/>
+      
 
       <section id="next-steps">
         <div id="docs">
