@@ -4,7 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import PlanetScene from './PlanetScene'
-import Confetti from 'three' 
+
 
 
 
@@ -12,29 +12,11 @@ import Confetti from 'three'
 function App() {
   const [count, setCount] = useState(0)
 
-  const lanzarConfetti = () => { 
-
-Confetti({ 
-
-particleCount: 150, 
-
-spread: 80, 
-
-origin: { y: 0.6 } 
-
-}); 
-
-}; 
-
   return (
     <>
       <PlanetScene/>
       <section id="center">
         <div className="hero">
-
-         
-
- 
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
@@ -57,14 +39,6 @@ origin: { y: 0.6 }
       <div className="ticks"></div>
 
       <section id="next-steps">
-
-         <button onClick={lanzarConfetti}> 
-
-    Lanzar Confetti 
-
-      </button> 
-
-
         <div id="docs">
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
