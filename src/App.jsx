@@ -11,6 +11,16 @@ import Confetti from 'canvas-confetti'
 
 function App() {
   const [count, setCount] = useState(0)
+}
+
+  function App() {
+  const lanzarConfetti = () => {
+    confetti({
+      particleCount: 150,
+      spread: 80,
+      origin: { y: 0.6 }
+    });
+  };
 
   return (
     <>
@@ -19,15 +29,10 @@ function App() {
 
           <Confetti/>
 
-            <button onClick={() => confetti()}>
-                   ¡Lanzar Confetti!
-                  </button>
-
-                  confetti({
-                    particleCount: 150,
-                    spread: 80,
-                    origin: { y: 0.6 }
-                      });
+            <button onClick={lanzarConfetti}>
+        Lanzar Confetti
+      </button>
+    
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
