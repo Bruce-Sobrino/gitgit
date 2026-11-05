@@ -15,6 +15,9 @@ function App() {
     <>
       <section id="center">
         <div className="hero">
+
+          <Confetti/>
+
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
@@ -37,6 +40,9 @@ function App() {
       <div className="ticks"></div>
 
       <section id="next-steps">
+
+        <Confetti/>
+        
         <div id="docs">
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
