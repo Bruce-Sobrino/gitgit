@@ -11,9 +11,9 @@ import Confetti from 'canvas-confetti'
 
 function App() {
   const [count, setCount] = useState(0)
-}
 
-  function App() {
+
+  
   const lanzarConfetti = () => {
     confetti({
       particleCount: 150,
