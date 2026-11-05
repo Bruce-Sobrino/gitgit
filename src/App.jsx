@@ -15,7 +15,7 @@ function App() {
 
   
   const lanzarConfetti = () => {
-    confetti({
+    Confetti({
       particleCount: 150,
       spread: 80,
       origin: { y: 0.6 }
