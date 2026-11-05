@@ -4,7 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import PlanetScene from './PlanetScene'
-import Confetti from 'canvas-confetti' 
+import Confetti from 'three' 
 
 
 
